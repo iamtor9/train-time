@@ -1,7 +1,12 @@
 body {
     display: block;
+    background-color: yellow;
 }
 
+table {
+    border: 5px;
+    color: darkblue;
+}
 
 .container {
     width: 100px;
