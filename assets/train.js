@@ -32,7 +32,7 @@ let newTrain = {
 	// Alert
 	alert("Train added!");
 
-
+//to do: add moment.js info
 
 // code notes below, was brainstorming
 
