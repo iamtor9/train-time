@@ -1,16 +1,38 @@
+function fillTable() {
+    let table = document.getElementById("tTable");
+    let row = table.insertRow(0);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3);
+    let cell5 = row.insertCell(4);
 
+    cell1.innerHTML = document.getElementById("trainName").value;
+    cell2.innerHTML = document.getElementById("dest").value;
+    cell3.innerHTML = document.getElementById("freq").value;
+    cell4.innerHTML = document.getElementById("nextA").value;
+    cell5.innerHTML = document.getElementById("minA").value;
+    return false;
+  }
 
 //  Button for adding trains
 //document.getElementsByIdName("button").onclick
+let FormData()
+document.getElementById(trainName);
+document.getElementById(dest);
+document.getElementById(freq);
+document.getElementById(nextA);
+document.getElementById(minA);
 
 document.getElementById("submitbtn").on("click", function()){
-
+.push(FormData).value.append("tBody");
 }
 
+console.log(fillTable);
 
-	// Get user input
+// have user input
 
-	// Creates local "temporary" object for holding train data
+// Creates local "temporary" object for holding train data
 let newTrain = {
 		name:  trainName,
 		destination: destination,
