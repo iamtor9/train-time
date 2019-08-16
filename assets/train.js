@@ -29,8 +29,28 @@ let newTrain = {
     console.log(newTrain.nextArrival);
     console.log(newTrain.minutesAway);
 
-	// Alert
-	alert("Train added!");
+// Assumptions
+let tFrequency = 3;
+// Time is 3pm
+let firstTime = "03:00";
+// First Time (pushed back 1 year to make sure it comes before current time)
+let firstTimeConverted = moment(firstTime, "03:00mm").subtract(1, "years");
+console.log(firstTimeConverted);
+// Current Time
+let currentTime = moment();
+console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+// Difference between the times
+let diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+console.log("DIFFERENCE IN TIME: " + diffTime);
+// Time apart (remainder)
+let tRemainder = diffTime % tFrequency;
+console.log(tRemainder);
+// Minute Until Train
+let tMinutesTillTrain = tFrequency - tRemainder;
+console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
+// Next Train
+let nextTrain = moment().add(tMinutesTillTrain, "minutes");
+console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
 
 //to do: add moment.js info
 
@@ -98,7 +118,7 @@ let newTrain = {
 
 //<script>
 //function myFunction() {
-  //var x = document.getElementById("myTextarea").form.id;
+  //let x = document.getElementById("myTextarea").form.id;
   //document.getElementById("demo").innerHTML = x;
 //}
 
