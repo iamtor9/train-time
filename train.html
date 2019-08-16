@@ -36,7 +36,7 @@
                     <th scoop ="col">Minutes Away</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="tBodyD" id="tBody">
                     <tr>
                       <td>Texas Trainsaw</td>
                       <td>Austin</td>
@@ -95,13 +95,12 @@
                     <label for="formgroupinput">NEXT ARRIVAL</label>
                     <input type="text" class="form-control" id="nextA" placeholder="">
             </div>
-            <div class="form-group">
+            <div class="row">
               <label for="formgroupinput">MINUTES AWAY</label>
               <input type="text" class="form-control" id="minA" placeholder="">
             </div>
 
-            <button id="submitBtn" type="submit" class="btn btn-primary" onclick="return fillTable()" >ADD TRAIN</button> 
-             
+            <button id="submitBtn" type="submit" class="btn btn-primary my-1">Submit</button> 
         </form>
       </div>
     
