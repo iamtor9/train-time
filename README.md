@@ -1,4 +1,2 @@
 # train-time
-
-/Users/victoriasorone/Desktop/train-time/train.html
-/Users/victoriasorone/Desktop/train-time/assets/train.js
+https://iamtor9.github.io/train-time/train.html
