@@ -3,115 +3,59 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Users/victoriasorone/Desktop/train-time/assets/style.css">
-    <link id="localForage" href="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.js>"
-   
+    <link rel="stylesheet" href="assets/style.css">
   </head>
-
-
-  <center><h1>All Aboard!</h1></center>
+   
+    <title>Train-take2</title>
+  </head>
   <body>
-
+​
     <div class="container"></div>
-    <div class="jumbotron bg-dark text-white"></div>
-        <h1 class="text-center">
-            <strong>TRAIN TIMES!!!</strong>
-        </h1>
-        <hr style="width: 800px; margin: auto">
+    <div class="jumbotron bg-dark text-yellow">
+
+            <h1 class="text-center">
+                    <strong>TRAIN TIMES</strong>
+            </h1>
+
+    </div>
+        
+        <hr action="" style="width: 820px; margin: auto">
         
         <br>
-      
-        <table class="table" id="tTable" style="width: 800px; margin: auto">
-            <thead> 
-
+        
+              <table id="traintb" class="table" action="" style="width: 820px; margin: auto">
+              <thead> 
                 <tr>
                     <th scoop ="col">Train Name</th>
-                    <th scoop ="col">Destination</th>
+                    <th scoop ="col">Final Destination</th>
                     <th scoop ="col">Frequency (min)</th>
                     <th scoop ="col">Next Arrival</th>
                     <th scoop ="col">Minutes Away</th>
                 </tr>
-            </thead>
-            <tbody class="tBodyD" id="tBody">
-                    <tr>
-                      <td>Texas Trainsaw</td>
-                      <td>Austin</td>
-                      <td>60 min</td>
-                      <td>3:30pm</td>
-                      <td>30 min</td>
-                    </tr>
-                    <tr>
-                      <td>Capital Line</td>
-                      <td>Washington D.C.</td>
-                      <td>45 min</td>
-                      <td>3:45</td>
-                      <td>45 min</td>
-                    </tr>
-                    <tr>
-                      <td>Ohklamotive</td>
-                      <td>Tulsa</td>
-                      <td>35 min</td>
-                      <td>3:20pm</td>
-                      <td>10 min</td>
-                    </tr>
-                    <tr>
-                      <td>Miami Midnight</td>
-                      <td>South Beach</td>
-                      <td>30 min</td>
-                      <td>3:30pm</td>
-                      <td>1 min</td>
-                    </tr>
-                    <tr>
-                      <td>Freedom Freight</td>
-                      <td>Manhatten</td>
-                      <td>60 min</td>
-                      <td>3:30pm</td>
-                      <td>30 min</td>
-                    </tr>
-                  
-                  </tbody>
-        </table>
-      
+              </thead>
+              <tbody>
+              </tbody>
+                </table>
         <br>
-      <div class="container"></div>
-        <form action="" style="width: 500px; margin: auto;">
-            <div class="form-group">
-                <label for="formgroupinput">TRAIN NAME</label>
-                <input type="text" class="form-control" id="trainName" placeholder="">
-            </div>
-            <div class="form-group">
-                    <label for="formgroupinput">DESTINATION</label>
-                    <input type="text" class="form-control" id="dest" placeholder="">
-            </div>
-            <div class="form-group">
-                    <label for="formgroupinput">FREQUENCY</label>
-                    <input type="text" class="form-control" id="freq" placeholder="">
-            </div>
-            <div class="form-group">
-                    <label for="formgroupinput">NEXT ARRIVAL</label>
-                    <input type="text" class="form-control" id="nextA" placeholder="">
-            </div>
-            <div class="row">
-              <label for="formgroupinput">MINUTES AWAY</label>
-              <input type="text" class="form-control" id="minA" placeholder="">
-            </div>
 
-            <button id="submitBtn" type="submit" class="btn btn-primary my-1">Submit</button> 
-        </form>
-      </div>
-    
+        <form id="myForm" style="margin-left: 40%;  width: 820px;">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js" integrity="sha256-H/ZsHjKSJUnQyCQHZwPmn7VTWFeTTI+qgCP1GkiB9zI=" crossorigin="anonymous"></script>
+            Train Name: <input id = "tname" type="text" name="fname" value="New Train"><br>
+            Final Destination: <input style="margin-top: 10px" id = "dest" type="text" name="lname" value="Where to?"><br>
+            Frequency (mins): <input style="margin-top: 10px" id = "freq" type="text" name="fname" value="10"><br>
+            First Train Time: <input style="margin-top: 10px" id = "first" type="text" name="fname" value="3:30"><br>
+          </form>
+
+          <button style="margin-left: 45%; margin-top: 10px" onclick="myFunction()">Add New Train</button>
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"
+  integrity="sha256-H/ZsHjKSJUnQyCQHZwPmn7VTWFeTTI+qgCP1GkiB9zI=" crossorigin="anonymous"></script>
+
+        <script src="train.js"></script>
    
     </body>
-</html>
+</html
