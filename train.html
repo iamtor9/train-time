@@ -1,61 +1,58 @@
-<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-  </head>
-   
-    <title>Train-take2</title>
-  </head>
-  <body>
-​
-    <div class="container"></div>
-    <div class="jumbotron bg-dark text-yellow">
 
-            <h1 class="text-center">
-                    <strong>TRAIN TIMES</strong>
-            </h1>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="./assets/style.css">
+<title>Train Time</title>
+</head>
 
+<body>
+<div class="jumbo-tron">
+    <h1 id="main-title">The Torminator Train</h1>
+    <h2 id="sub-title">Get Ready For An Adventure!.</h2>
+</div>
+
+<div class="Tor-Train">
+    <div class="Tor-Title">
+        Torminator Train Times
     </div>
-        
-        <hr action="" style="width: 820px; margin: auto">
-        
-        <br>
-        
-              <table id="traintb" class="table" action="" style="width: 820px; margin: auto">
-              <thead> 
-                <tr>
-                    <th scoop ="col">Train Name</th>
-                    <th scoop ="col">Final Destination</th>
-                    <th scoop ="col">Frequency (min)</th>
-                    <th scoop ="col">Next Arrival</th>
-                    <th scoop ="col">Minutes Away</th>
-                </tr>
-              </thead>
-              <tbody>
-              </tbody>
-                </table>
-        <br>
+    <div id="table-div">
+        <table id="data-table">
+            <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </tr>
+        </table>
+    </div>
+</div>
 
-        <form id="myForm" style="margin-left: 40%;  width: 820px;">
+<div class="Tor">
+    <div class="Tor-Title">
+        Current Train Schedule
+    </div>
+    <div id="div-form">
+        <form>
+            <a>Train Name</a><br>
+            <input type="text" id="train-name"><br>
+            <a>Destination</a><br>
+            <input type="text" id="destination">
+            <a>First Train Time (HH:mm - military time)</a><br>
+            <input type="text" id="train-one"><br>
+            <a>Frequency</a><br>
+            <input type="text" id="frequency">
+            <button id="submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
 
-            Train Name: <input id = "tname" type="text" name="fname" value="New Train"><br>
-            Final Destination: <input style="margin-top: 10px" id = "dest" type="text" name="lname" value="Where to?"><br>
-            Frequency (mins): <input style="margin-top: 10px" id = "freq" type="text" name="fname" value="10"><br>
-            First Train Time: <input style="margin-top: 10px" id = "first" type="text" name="fname" value="3:30"><br>
-          </form>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.js" integrity="sha256-3NP4l3uenVxIZ0vLGnUjjObImjaJltaSzAHaGUr+yDA=" crossorigin="anonymous"></script>
+<script src="./assets/javascript/app.js"></script>
+</body>
 
-          <button style="margin-left: 45%; margin-top: 10px" onclick="myFunction()">Add New Train</button>
-
- 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"
-  integrity="sha256-H/ZsHjKSJUnQyCQHZwPmn7VTWFeTTI+qgCP1GkiB9zI=" crossorigin="anonymous"></script>
-
-        <script src="train.js"></script>
-   
-    </body>
-</html
+</html>
