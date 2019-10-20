@@ -1,2 +1,3 @@
 # train-time
-https://iamtor9.github.io/train-time/train.html
+https://iamtor9.github.io/train-time/train
+
